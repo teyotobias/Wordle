@@ -11,3 +11,13 @@
     justify-content: center;
     align-content: center;
 }
+
+.Tile.correct {
+    background-color: green;
+}
+.Tile.present {
+    background-color: yellow;
+}
+.Tile.absent {
+    background-color: grey;
+}

@@ -29,3 +29,13 @@
   .keyboard-row button.wide-button {
     flex-grow: 1.5;
   }
+
+  .key.correct {
+    background-color: green;
+  }
+  .key.present {
+    background-color: yellow;
+  }
+  .key.absent {
+    background-color: grey;
+  }

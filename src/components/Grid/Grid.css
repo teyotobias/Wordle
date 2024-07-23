@@ -40,3 +40,24 @@ header {
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 5px;
 }
+
+p {
+    color: white;
+}
+
+.new-game-button {
+    background-color: rgb(129, 131, 132);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    user-select: none;
+    cursor: pointer;
+    font-family: inherit;
+    flex-grow: 1;
+    margin-top: 6px;
+    font-weight: bold;
+    padding: 5px;
+}
