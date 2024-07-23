@@ -32,18 +32,24 @@ export default function Grid() {
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error: {error.message}</p>;
 
+    const currentRow = guesses.findIndex(guess => guess === '');
     
     return (
         <div className="game">
-            <div className="grid">
-                {guesses.map((guess, rowIndex) => (
-                    <div key={rowIndex} className="row">
-                        {Array(5).fill('').map((_, tileIndex) => (
-                            <Tile key={tileIndex} letter={guess[tileIndex] || ''} />
+            <header>
+                <h1 class="title">WORDLE</h1>
+            </header>
+            <div className="gridContainer">
+                <div className="grid">
+                    {guesses.map((guess, rowIndex) => (
+                        <div key={rowIndex} className="row">
+                            {Array(5).fill('').map((_, tileIndex) => (
+                                <Tile key={tileIndex} letter={rowIndex === currentRow ? (currentGuess[tileIndex] || ''): guess[tileIndex] || ''} />
 
-                        ))}
-                    </div>
-                ))}
+                            ))}
+                        </div>
+                    ))}
+                </div>
             </div>
             <Keyboard onKeyPress={handleKeyPress} />
             <p>Word of the day: {word}</p>
