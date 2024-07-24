@@ -4,11 +4,12 @@ export default function Keyboard({ onKeyPress, keyStatus }) {
 
     const row1 = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'];
     const row2 = ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'];
-    const row3 = ['Backspace', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', 'Enter'];
+    const row3 = ['Enter', 'Z', 'X', 'C', 'V', 'B', 'N', 'M','Backspace'];
 
 
     return (
         <div className="keyboard">
+            <div class="spacer-half"></div>
             <div className="keyboard-row">
                 {row1.map((key, index) => (
                     <button 

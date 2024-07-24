@@ -13,11 +13,11 @@
 }
 
 .Tile.correct {
-    background-color: green;
+    background-color: rgba(92, 175, 92, 0.769);
 }
 .Tile.present {
-    background-color: yellow;
+    background-color: rgb(255, 219, 88, 0.68);
 }
 .Tile.absent {
-    background-color: grey;
+    background-color: rgb(128,128,128, 0.40);
 }
