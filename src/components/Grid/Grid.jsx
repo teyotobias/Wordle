@@ -106,7 +106,7 @@ export default function Grid() {
             </div>
             <Keyboard onKeyPress={handleKeyPress} keyStatus={keyStatus} />
             <button onClick={resetGame} className="new-game-button">New Game</button>
-            <p>Word of the day: {word}</p>
+            {/* <p>Word of the day: {word}</p> */}
         </div>
     )
 }
